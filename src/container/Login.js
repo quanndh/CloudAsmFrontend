@@ -16,7 +16,7 @@ class Login extends Component {
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
                     </div>
-                    Not have an account? <Link to="/SignUp"> Sign up</Link>
+                    Not have an account? <Link to="/signup"> Sign up</Link>
                 </form>
             </div>
         );

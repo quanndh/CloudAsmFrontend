@@ -14,12 +14,12 @@ class SignUp extends Component {
                         <input type="password" class="form-control" name="password" placeholder="Password" required="required"/>
                     </div>   
                     <div class="form-group">
-                        <input type="Username" class="form-control" name="name" placeholder="Password" required="required"/>
+                        <input type="text" class="form-control" name="name" placeholder="Username" required="required"/>
                     </div>      
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Sign Up</button>
                     </div>
-                    Already have account? <Link to="/Login"> Login</Link>
+                    Already have account? <Link to="/login"> Login</Link>
                 </form>
             </div>
         );

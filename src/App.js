@@ -52,7 +52,7 @@ class App extends Component {
             <Route path="/login" render={props => {
               return <Login {...props}/>
             }} />
-            <Route path="SignUp" render={props => {
+            <Route path="/signup" render={props => {
               return <SignUp {...props}/>
             }} />
             <Footer />

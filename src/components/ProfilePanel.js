@@ -8,10 +8,12 @@ class ProfilePanel extends Component {
         this.logOut = this.logOut.bind(this);
     }
     logOut(){
-        axios.delete("https://toyshop-server.herokuapp.com/api/login/"||"http://localhost:6969/api/login/", {
+        axios.delete("https://toyshop-server.herokuapp.com/api/login/", {
             withCredentials: true
-        })
-            .then(console.log("log out"));
+        }).then(() => {
+            console.log("log out");
+            window.location.href = "/";
+        });
     }
 
     render() {

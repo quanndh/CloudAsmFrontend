@@ -31,11 +31,11 @@ export default class TopMenu extends React.Component {
               ToyShop
             </Link>
 
-            <div className="col-6 text-center">
+            <div className="col-5 text-center">
               <input className="form-control " onChange={this.textChange}  type="search" placeholder="Search" aria-label="Search"/>
             </div>
             
-            <div className=" col-3 collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+            <div className=" col-4 collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
               <ul className="navbar-nav ">
                 <li className="nav-item ">
                     <CartContext.Consumer>

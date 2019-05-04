@@ -19,7 +19,7 @@ class SignUp extends Component {
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Sign Up</button>
                     </div>
-                    Already have account? <Link to="/SignUp"> Login</Link>
+                    Already have account? <Link to="/Login"> Login</Link>
                 </form>
             </div>
         );

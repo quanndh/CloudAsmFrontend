@@ -9,6 +9,7 @@ import ProductDetail from './container/ProductDetail';
 import Footer from './components/Footer';
 import Login from './container/Login';
 import axios from "axios";
+import SignUp from './container/Signup';
 
 class App extends Component {
   constructor(){
@@ -50,6 +51,9 @@ class App extends Component {
             />
             <Route path="/login" render={props => {
               return <Login {...props}/>
+            }} />
+            <Route path="SignUp" render={props => {
+              return <SignUp {...props}/>
             }} />
             <Footer />
           </div>

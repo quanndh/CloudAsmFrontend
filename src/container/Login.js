@@ -4,7 +4,7 @@ class Login extends Component {
     render() {
         return (
             <div class="login-form">
-                <form action="http://localhost:6969/api/login" method="post">
+                <form action="https://toyshop-server.herokuapp.com/api/login/"  method="post">
                     <h2 class="text-center">Login</h2>   
                     <div class="form-group has-error">
                         <input type="text" class="form-control" name="account" placeholder="Username" required="required"/>

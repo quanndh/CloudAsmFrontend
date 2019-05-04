@@ -13,7 +13,7 @@ class ProductDetail extends Component {
         this.handleOnKeyUp = this.handleOnKeyUp.bind(this);
     }
     componentDidMount() {
-        axios.get(`http://localhost:6969/api/products/${this.props.match.params.productId}`)
+        axios.get( `https://toyshop-server.herokuapp.com/api/products/${this.props.match.params.productId}`||`http://localhost:6969/api/products/${this.props.match.params.productId}`)
             .then(data => {
                 this.setState({
                     product: data.data.data
@@ -32,7 +32,7 @@ class ProductDetail extends Component {
         let text = e.target.value
         console.log(e.keyCode, this.props.userId)
         if(e.keyCode === 13 && this.props.userId){
-            axios.post(`http://localhost:6969/api/products/${this.props.match.params.productId}/feedback`, {
+            axios.post(`https://toyshop-server.herokuapp.com/api/products/${this.props.match.params.productId}/feedback`||`http://localhost:6969/api/products/${this.props.match.params.productId}/feedback`, {
                 userId: this.props.userId,
                 content: text
             })

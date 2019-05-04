@@ -12,7 +12,7 @@ class MainContent extends Component {
     }
 
     componentDidMount() {
-        axios.get("http://localhost:6969/api/products", 
+        axios.get( "https://toyshop-server.herokuapp.com/api/products/" || "http://localhost:6969/api/products", 
         {
             withCredentials: true
         })

@@ -21,7 +21,7 @@ class App extends Component {
   }
   onSearchChange = text => this.setState({search: text});
   componentDidMount(){
-    axios.get("http://localhost:6969/api/login/me", {
+    axios.get("https://toyshop-server.herokuapp.com/api/login/me"||"http://localhost:6969/api/login/me", {
       withCredentials: true
     })
       .then(data => {

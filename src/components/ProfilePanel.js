@@ -3,9 +3,14 @@ import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import axios from "axios";
 
 class ProfilePanel extends Component {
-
+    constructor(){
+        super();
+        this.logOut = this.logOut.bind(this);
+    }
     logOut(){
-        axios.delete("https://toyshop-server.herokuapp.com/api/login/"||"http://localhost:6969/api/login/")
+        axios.delete("https://toyshop-server.herokuapp.com/api/login"||"http://localhost:6969/api/login", {
+            withCredentials: true
+        })
             .then(console.log("log out"));
     }
 

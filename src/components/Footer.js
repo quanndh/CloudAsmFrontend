@@ -7,7 +7,7 @@ class Footer extends Component {
                 <div class="row">
                     <div id="footer">
                         <ul class="footer">
-                        <li>Website built by Quan Nguyen</li>&nbsp;&nbsp;
+                        <li>Webapp built by Quan Nguyen</li>&nbsp;&nbsp;
                         <li>Email:quanndhgch17467@fpt.edu.vn</li>
                         </ul>
                     </div>

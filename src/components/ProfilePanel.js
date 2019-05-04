@@ -17,6 +17,11 @@ class ProfilePanel extends Component {
                 <li className=" nav-item">
                     <div className="nav-link">{this.props.username}</div>
                 </li>
+                <li>
+                    <Link to="/logout">
+                        <button className="btn btn-outline-primary">Log out</button>
+                    </Link>
+                </li>
                );
            }
               

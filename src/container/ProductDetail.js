@@ -42,7 +42,9 @@ class ProductDetail extends Component {
                     newFb: ""
                 })
             })
-        } 
+        } else if(e.keyCode === 13 && !this.props.userId){
+            alert("You need to login first");
+        }
     }
 
 

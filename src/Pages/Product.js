@@ -27,6 +27,7 @@ class Product extends Component {
                 </Link>
                 <CartContext.Consumer>
                     {({addToCart}) => <Button className="btn-add" outline color="secondary" onClick={() => addToCart(product)}>Add to cart</Button>}
+                    {({cartItems}) => console.log(cartItems)}
                 </CartContext.Consumer>
             </Card>            
         );
